@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import CoreData
+import MapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    static let dataBase = DataBase()
+    static var displayAlert : DisplayAlert?
+    static var inheritedSpan: MKCoordinateSpan?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print( AppDelegate.dataBase.coreDataManager )
+
         return true
     }
 

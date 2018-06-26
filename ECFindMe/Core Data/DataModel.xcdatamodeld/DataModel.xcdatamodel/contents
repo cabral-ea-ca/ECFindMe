@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppSettings" representedClassName=".AppSettings" syncable="YES">
+        <attribute name="lastLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastLatitudeDelta" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastLongitudeDelta" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="LocationItem" representedClassName=".LocationItem" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="heading" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="speed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="relLocationList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocationList" inverseName="relLocationItems" inverseEntity="LocationList" syncable="YES"/>
+    </entity>
+    <entity name="LocationList" representedClassName=".LocationList" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="relLocationItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LocationItem" inverseName="relLocationList" inverseEntity="LocationItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AppSettings" positionX="-1863" positionY="-1464" width="128" height="120"/>
+        <element name="LocationItem" positionX="-1604" positionY="-1476" width="128" height="133"/>
+        <element name="LocationList" positionX="-1863" positionY="-1584" width="128" height="75"/>
+    </elements>
+</model>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D123CB020C4D4FA00570780 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D123CAF20C4D4FA00570780 /* UIAlertController.swift */; };
 		0D366B8520C3C0C10013C06A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366B8420C3C0C10013C06A /* AppDelegate.swift */; };
 		0D366B8720C3C0C10013C06A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366B8620C3C0C10013C06A /* ViewController.swift */; };
 		0D366B8A20C3C0C10013C06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D366B8820C3C0C10013C06A /* Main.storyboard */; };
@@ -14,6 +15,28 @@
 		0D366B8F20C3C0C20013C06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D366B8D20C3C0C20013C06A /* LaunchScreen.storyboard */; };
 		0D366B9A20C3C0C20013C06A /* ECFindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366B9920C3C0C20013C06A /* ECFindMeTests.swift */; };
 		0D366BA520C3C0C20013C06A /* ECFindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366BA420C3C0C20013C06A /* ECFindMeUITests.swift */; };
+		0D366BBD20C3CCE90013C06A /* DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366BBC20C3CCE90013C06A /* DisplayAlert.swift */; };
+		0D366BC020C3CDB60013C06A /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366BBF20C3CDB60013C06A /* LocationManagerDelegate.swift */; };
+		0D366BC320C3CE9F0013C06A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366BC220C3CE9F0013C06A /* Reachability.swift */; };
+		0D366BC520C3CEB80013C06A /* TypeCastConv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366BC420C3CEB80013C06A /* TypeCastConv.swift */; };
+		0D366BC920C3DB810013C06A /* NaviUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D366BC820C3DB810013C06A /* NaviUsage.swift */; };
+		0D6E091520C6348900376C1F /* CustCLLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6E091420C6348900376C1F /* CustCLLocationManager.swift */; };
+		0D7328BE20C46B7F00222BD9 /* LockUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7328BD20C46B7F00222BD9 /* LockUsage.swift */; };
+		0D75807920C4C493005ECAF7 /* UINavigationControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75807820C4C493005ECAF7 /* UINavigationControllerExt.swift */; };
+		0D75CB7B20C750820073F582 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75CB7A20C750820073F582 /* DataBase.swift */; };
+		0D75CB7E20C750820073F582 /* AppSettings+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75CB7C20C750820073F582 /* AppSettings+CoreDataClass.swift */; };
+		0D75CB7F20C750820073F582 /* AppSettings+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D75CB7D20C750820073F582 /* AppSettings+CoreDataProperties.swift */; };
+		0D86174920C673C200E4989B /* LocationItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86174520C673C200E4989B /* LocationItem+CoreDataClass.swift */; };
+		0D86174A20C673C200E4989B /* LocationItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86174620C673C200E4989B /* LocationItem+CoreDataProperties.swift */; };
+		0D86174B20C673C200E4989B /* LocationList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86174720C673C200E4989B /* LocationList+CoreDataClass.swift */; };
+		0D86174C20C673C200E4989B /* LocationList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86174820C673C200E4989B /* LocationList+CoreDataProperties.swift */; };
+		0D86174E20C6766A00E4989B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86174D20C6766A00E4989B /* CoreDataManager.swift */; };
+		0D86175020C70B0100E4989B /* CoreDataManagerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D86174F20C70B0100E4989B /* CoreDataManagerExt.swift */; };
+		0DA4328220C5C58100FCAB33 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4328020C5C58100FCAB33 /* DataModel.xcdatamodeld */; };
+		0DCFC8A520CA1F4100BBFC45 /* LogViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC8A420CA1F4100BBFC45 /* LogViewController.storyboard */; };
+		0DCFC8AB20CA422900BBFC45 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFC8AA20CA422900BBFC45 /* LogViewController.swift */; };
+		0DCFC8AD20CA425B00BBFC45 /* NSObjectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFC8AC20CA425B00BBFC45 /* NSObjectExt.swift */; };
+		0DCFC8AF20CA4A0300BBFC45 /* LogViewNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFC8AE20CA4A0300BBFC45 /* LogViewNaviController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D123CAF20C4D4FA00570780 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		0D366B8120C3C0C10013C06A /* ECFindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECFindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D366B8420C3C0C10013C06A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D366B8620C3C0C10013C06A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +71,28 @@
 		0D366BA020C3C0C20013C06A /* ECFindMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECFindMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D366BA420C3C0C20013C06A /* ECFindMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECFindMeUITests.swift; sourceTree = "<group>"; };
 		0D366BA620C3C0C20013C06A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D366BBC20C3CCE90013C06A /* DisplayAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAlert.swift; sourceTree = "<group>"; };
+		0D366BBF20C3CDB60013C06A /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
+		0D366BC220C3CE9F0013C06A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		0D366BC420C3CEB80013C06A /* TypeCastConv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCastConv.swift; sourceTree = "<group>"; };
+		0D366BC820C3DB810013C06A /* NaviUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviUsage.swift; sourceTree = "<group>"; };
+		0D6E091420C6348900376C1F /* CustCLLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustCLLocationManager.swift; sourceTree = "<group>"; };
+		0D7328BD20C46B7F00222BD9 /* LockUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockUsage.swift; sourceTree = "<group>"; };
+		0D75807820C4C493005ECAF7 /* UINavigationControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExt.swift; sourceTree = "<group>"; };
+		0D75CB7A20C750820073F582 /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		0D75CB7C20C750820073F582 /* AppSettings+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppSettings+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D75CB7D20C750820073F582 /* AppSettings+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppSettings+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D86174520C673C200E4989B /* LocationItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D86174620C673C200E4989B /* LocationItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D86174720C673C200E4989B /* LocationList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0D86174820C673C200E4989B /* LocationList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0D86174D20C6766A00E4989B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0D86174F20C70B0100E4989B /* CoreDataManagerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerExt.swift; sourceTree = "<group>"; };
+		0DA4328120C5C58100FCAB33 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		0DCFC8A420CA1F4100BBFC45 /* LogViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogViewController.storyboard; sourceTree = "<group>"; };
+		0DCFC8AA20CA422900BBFC45 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		0DCFC8AC20CA425B00BBFC45 /* NSObjectExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExt.swift; sourceTree = "<group>"; };
+		0DCFC8AE20CA4A0300BBFC45 /* LogViewNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewNaviController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +120,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D123CB120C4D52E00570780 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				0D366BBC20C3CCE90013C06A /* DisplayAlert.swift */,
+				0D123CAF20C4D4FA00570780 /* UIAlertController.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		0D123CB220C4D56D00570780 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				0D366B8620C3C0C10013C06A /* ViewController.swift */,
+				0D6E091420C6348900376C1F /* CustCLLocationManager.swift */,
+				0D366BBF20C3CDB60013C06A /* LocationManagerDelegate.swift */,
+				0D7328BD20C46B7F00222BD9 /* LockUsage.swift */,
+				0D366BC820C3DB810013C06A /* NaviUsage.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		0D366B7820C3C0C00013C06A = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +165,14 @@
 			isa = PBXGroup;
 			children = (
 				0D366B8420C3C0C10013C06A /* AppDelegate.swift */,
-				0D366B8620C3C0C10013C06A /* ViewController.swift */,
-				0D366B8820C3C0C10013C06A /* Main.storyboard */,
 				0D366B8B20C3C0C20013C06A /* Assets.xcassets */,
-				0D366B8D20C3C0C20013C06A /* LaunchScreen.storyboard */,
 				0D366B9020C3C0C20013C06A /* Info.plist */,
+				0D797F1620C9A81E00F93416 /* StoryBoards */,
+				0D123CB220C4D56D00570780 /* MainView */,
+				0D797F1B20C9B34200F93416 /* LogView */,
+				0D123CB120C4D52E00570780 /* Alerts */,
+				0DA4327F20C5C53200FCAB33 /* Core Data */,
+				0D366BC120C3CE420013C06A /* Library API */,
 			);
 			path = ECFindMe;
 			sourceTree = "<group>";
@@ -123,6 +193,53 @@
 				0D366BA620C3C0C20013C06A /* Info.plist */,
 			);
 			path = ECFindMeUITests;
+			sourceTree = "<group>";
+		};
+		0D366BC120C3CE420013C06A /* Library API */ = {
+			isa = PBXGroup;
+			children = (
+				0D366BC220C3CE9F0013C06A /* Reachability.swift */,
+				0D366BC420C3CEB80013C06A /* TypeCastConv.swift */,
+				0DCFC8AC20CA425B00BBFC45 /* NSObjectExt.swift */,
+				0D75807820C4C493005ECAF7 /* UINavigationControllerExt.swift */,
+			);
+			path = "Library API";
+			sourceTree = "<group>";
+		};
+		0D797F1620C9A81E00F93416 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				0D366B8D20C3C0C20013C06A /* LaunchScreen.storyboard */,
+				0D366B8820C3C0C10013C06A /* Main.storyboard */,
+				0DCFC8A420CA1F4100BBFC45 /* LogViewController.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		0D797F1B20C9B34200F93416 /* LogView */ = {
+			isa = PBXGroup;
+			children = (
+				0DCFC8AE20CA4A0300BBFC45 /* LogViewNaviController.swift */,
+				0DCFC8AA20CA422900BBFC45 /* LogViewController.swift */,
+			);
+			path = LogView;
+			sourceTree = "<group>";
+		};
+		0DA4327F20C5C53200FCAB33 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4328020C5C58100FCAB33 /* DataModel.xcdatamodeld */,
+				0D86174D20C6766A00E4989B /* CoreDataManager.swift */,
+				0D86174F20C70B0100E4989B /* CoreDataManagerExt.swift */,
+				0D75CB7C20C750820073F582 /* AppSettings+CoreDataClass.swift */,
+				0D75CB7D20C750820073F582 /* AppSettings+CoreDataProperties.swift */,
+				0D75CB7A20C750820073F582 /* DataBase.swift */,
+				0D86174520C673C200E4989B /* LocationItem+CoreDataClass.swift */,
+				0D86174620C673C200E4989B /* LocationItem+CoreDataProperties.swift */,
+				0D86174720C673C200E4989B /* LocationList+CoreDataClass.swift */,
+				0D86174820C673C200E4989B /* LocationList+CoreDataProperties.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +349,7 @@
 				0D366B8F20C3C0C20013C06A /* LaunchScreen.storyboard in Resources */,
 				0D366B8C20C3C0C20013C06A /* Assets.xcassets in Resources */,
 				0D366B8A20C3C0C10013C06A /* Main.storyboard in Resources */,
+				0DCFC8A520CA1F4100BBFC45 /* LogViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +374,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D86174C20C673C200E4989B /* LocationList+CoreDataProperties.swift in Sources */,
+				0DA4328220C5C58100FCAB33 /* DataModel.xcdatamodeld in Sources */,
+				0D86174A20C673C200E4989B /* LocationItem+CoreDataProperties.swift in Sources */,
+				0DCFC8AB20CA422900BBFC45 /* LogViewController.swift in Sources */,
+				0D7328BE20C46B7F00222BD9 /* LockUsage.swift in Sources */,
+				0D75CB7B20C750820073F582 /* DataBase.swift in Sources */,
+				0D86174E20C6766A00E4989B /* CoreDataManager.swift in Sources */,
+				0D366BC520C3CEB80013C06A /* TypeCastConv.swift in Sources */,
+				0D86175020C70B0100E4989B /* CoreDataManagerExt.swift in Sources */,
+				0D366BBD20C3CCE90013C06A /* DisplayAlert.swift in Sources */,
+				0D366BC920C3DB810013C06A /* NaviUsage.swift in Sources */,
+				0D123CB020C4D4FA00570780 /* UIAlertController.swift in Sources */,
+				0D6E091520C6348900376C1F /* CustCLLocationManager.swift in Sources */,
+				0D75CB7E20C750820073F582 /* AppSettings+CoreDataClass.swift in Sources */,
+				0DCFC8AD20CA425B00BBFC45 /* NSObjectExt.swift in Sources */,
 				0D366B8720C3C0C10013C06A /* ViewController.swift in Sources */,
 				0D366B8520C3C0C10013C06A /* AppDelegate.swift in Sources */,
+				0D86174920C673C200E4989B /* LocationItem+CoreDataClass.swift in Sources */,
+				0D75CB7F20C750820073F582 /* AppSettings+CoreDataProperties.swift in Sources */,
+				0D75807920C4C493005ECAF7 /* UINavigationControllerExt.swift in Sources */,
+				0D366BC320C3CE9F0013C06A /* Reachability.swift in Sources */,
+				0DCFC8AF20CA4A0300BBFC45 /* LogViewNaviController.swift in Sources */,
+				0D86174B20C673C200E4989B /* LocationList+CoreDataClass.swift in Sources */,
+				0D366BC020C3CDB60013C06A /* LocationManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N7238GD4W;
 				INFOPLIST_FILE = ECFindMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N7238GD4W;
 				INFOPLIST_FILE = ECFindMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,6 +726,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0DA4328020C5C58100FCAB33 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0DA4328120C5C58100FCAB33 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 0DA4328120C5C58100FCAB33 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D366B7920C3C0C00013C06A /* Project object */;
 }

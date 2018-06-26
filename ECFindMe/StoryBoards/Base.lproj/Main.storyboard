@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8am-fZ-CZ1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ECFindMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eqq-Kd-V8f"/>
+                        <viewControllerLayoutGuide type="bottom" id="tN9-ZI-r4z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BKZ-UV-DT9">
+                                <rect key="frame" x="4" y="93" width="367" height="522"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ld-5G-EAv">
+                                <rect key="frame" x="4" y="68" width="49.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position, Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zr-KD-7E7" userLabel="Location Label">
+                                <rect key="frame" x="251.5" y="68" width="119.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dev Orient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snN-bO-ftv" userLabel="Heading Orientation Label">
+                                <rect key="frame" x="69.5" y="68" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="snN-bO-ftv" firstAttribute="leading" secondItem="4ld-5G-EAv" secondAttribute="trailing" constant="16" id="0f6-nT-1B0"/>
+                            <constraint firstItem="snN-bO-ftv" firstAttribute="top" secondItem="eqq-Kd-V8f" secondAttribute="bottom" constant="4" id="1Y8-wK-v6P"/>
+                            <constraint firstItem="4ld-5G-EAv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="2Eg-8S-fZ0"/>
+                            <constraint firstItem="tN9-ZI-r4z" firstAttribute="top" secondItem="BKZ-UV-DT9" secondAttribute="bottom" constant="8" id="5Dw-Q9-Brg" userLabel="Bottom Layout Guide.top = Map View.bottom + 4"/>
+                            <constraint firstItem="6zr-KD-7E7" firstAttribute="top" secondItem="eqq-Kd-V8f" secondAttribute="bottom" constant="4" id="6m0-5s-Zy5"/>
+                            <constraint firstAttribute="trailing" secondItem="6zr-KD-7E7" secondAttribute="trailing" constant="4" id="6rJ-xE-2zj"/>
+                            <constraint firstAttribute="trailing" secondItem="BKZ-UV-DT9" secondAttribute="trailing" constant="4" id="7N6-3q-fcZ"/>
+                            <constraint firstItem="4ld-5G-EAv" firstAttribute="top" secondItem="eqq-Kd-V8f" secondAttribute="bottom" constant="4" id="Gyn-yh-WWB"/>
+                            <constraint firstItem="BKZ-UV-DT9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="4" id="TFk-1a-eqs"/>
+                            <constraint firstItem="BKZ-UV-DT9" firstAttribute="top" secondItem="4ld-5G-EAv" secondAttribute="bottom" constant="4" id="nvV-BQ-zQA"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="oPF-cP-hqJ">
+                        <leftBarButtonItems>
+                            <barButtonItem title="  ▲   " width="55" style="plain" id="Jdh-C3-d8b">
+                                <connections>
+                                    <action selector="buttonOrientHeading:" destination="BYZ-38-t0r" id="zBQ-Ai-nwJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Lock Orientation" id="8qr-is-dhY">
+                                <connections>
+                                    <action selector="buttonLockUsage:" destination="BYZ-38-t0r" id="pb3-Ep-832"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Logs" id="Q4K-3t-bS7">
+                                <connections>
+                                    <action selector="buttonLogs:" destination="BYZ-38-t0r" id="ejP-Oe-Vjl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Usage" id="105-FO-NcB">
+                                <connections>
+                                    <action selector="buttonNaviUsage:" destination="BYZ-38-t0r" id="YPp-zV-wjZ"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="authorizationLabel" destination="4ld-5G-EAv" id="0Vq-MH-I5A"/>
+                        <outlet property="btnLockOrientation" destination="8qr-is-dhY" id="iqZ-qu-O0l"/>
+                        <outlet property="btnNaviUsage" destination="105-FO-NcB" id="X7h-Cl-w9N"/>
+                        <outlet property="headingOrientation" destination="snN-bO-ftv" id="YHf-si-bs7"/>
+                        <outlet property="locationLabel" destination="6zr-KD-7E7" id="iXb-n6-Cba"/>
+                        <outlet property="mapView" destination="BKZ-UV-DT9" id="DyV-TK-VhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="28.335832083958024"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sqf-tg-tg0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8am-fZ-CZ1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qX1-ZG-A4o">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="M4w-W5-RbF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMn-lN-UON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="28.335832083958024"/>
+        </scene>
+    </scenes>
+</document>
